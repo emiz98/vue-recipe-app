@@ -1,0 +1,45 @@
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(2, 168, 2);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 bg-green-600 font-medium rounded-md hover:bg-green-500
+    transition ease-in-out whitespace-nowrap;
+  }
+  .btnSecondary {
+    @apply px-4 py-2 bg-red-600 font-medium rounded-md hover:bg-red-500
+    transition ease-in-out whitespace-nowrap;
+  }
+  .btnEdit {
+    @apply px-4 py-2 bg-blue-600 font-medium rounded-md hover:bg-blue-500
+    transition ease-in-out whitespace-nowrap;
+  }
+  .inputClass {
+    @apply outline-none text-black rounded-md w-full px-4 py-2;
+  }
+  .card {
+    @apply bg-[#081634] p-5 space-y-3 md:ml-5 my-5 flex flex-col;
+  }
+}
